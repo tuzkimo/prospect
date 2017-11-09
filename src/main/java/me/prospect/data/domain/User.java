@@ -1,23 +1,23 @@
-package me.prospect.data.entity;
+package me.prospect.data.domain;
 
 import java.util.Date;
 
-public class UserEntity {
+public class User {
   private String id;
   private String username;
   private String password;
   private Date createDate;
   private Boolean isBlocked;
 
-  public UserEntity() {
+  public User() {
   }
 
-  public UserEntity(String username, String password) {
+  public User(String username, String password) {
     this.username = username;
     this.password = password;
   }
 
-  public UserEntity(String id, String username, String password, Date createDate, Boolean isBlocked) {
+  public User(String id, String username, String password, Date createDate, Boolean isBlocked) {
     this.id = id;
     this.username = username;
     this.password = password;
@@ -47,7 +47,7 @@ public class UserEntity {
 
   @Override
   public String toString() {
-    return "UserEntity{" +
+    return "User{" +
         "id='" + id + '\'' +
         ", username='" + username + '\'' +
         ", password='" + password + '\'' +
