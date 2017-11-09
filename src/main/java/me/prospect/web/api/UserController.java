@@ -54,7 +54,7 @@ public class UserController {
   }
 
   @RequestMapping(value = "/user", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
-  @Transactional(pro)
+  @Transactional
   public ResponseEntity<List<User>> add(@RequestBody User user, UriComponentsBuilder uriComponentsBuilder) {
     LOGGER.info("Creating new user with id {}", user.getId());
     List<User> users = null;
